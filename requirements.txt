@@ -7,5 +7,4 @@ Keras-Preprocessing==1.1.2
 numpy==1.22.3
 Pillow==9.1.0
 pymongo==4.1.0
-tensorflow==2.8.0
 Werkzeug==2.1.1
