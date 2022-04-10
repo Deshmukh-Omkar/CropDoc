@@ -24,7 +24,7 @@ print("Loading crop disease model...")
 loaded_model = pred.get_model()
 
 # Loading model labels
-with open("models\disease_labels.txt", 'r') as f:
+with open("models/disease_labels.txt", 'r') as f:
     class_names = f.read().split('\n')
 
 # -------------------------------------------------------
