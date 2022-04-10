@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CropDoc</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="/static/assets/favicon.ico">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Karma&family=Raleway:wght@600&family=Zilla+Slab:wght@500&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+  <!-- FontAwesome CSS -->
+  <link rel="stylesheet" href="/static/css/font-awesome.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+
+  <!-- Jumbotron -->
+  <div class="container-fluid jt">
+    <img src="/static/assets/jumbotron/plant.png" class="jt-plant" alt="Plant">
+
+    <!-- Header -->
+    <h1 class="jt-title">CropDoc</h1>
+
+    <!-- Subtitle -->
+    <p class="jt-subtitle">
+      CropDoc आपकी फसल किसी बीमारी से पीड़ित है या नहीं, यह पहचानने में आपकी मदद करने के लिए यहां है।
+      <br>यदि हाँ, तो यह रोग की पहचान करेगा और आपको आवश्यक जानकारी प्रदान करेगा।
+    </p>
+
+    <!-- File Input Form -->
+      <form action="/predict" class="jt-form align-items-center" method="POST" enctype="multipart/form-data">
+        <input type="file" class="col-8 jt-img" name="image", id="image"
+          style="font-size: 20px; color: #F0BB62;" accept="image/*" required/>
+        <input type="submit" class="col-auto jt-btn" id="predict-button" 
+          style="font-size: 20px; color: white;" value="बीमार जाने"/>
+      </form>
+    
+  </div>
+  <!-- end Jumbotron -->
+
+  <!-- Plants we offer to help with -->
+  <div class="container-fluid offerings">
+    <div><h2 class="of-h2">पौधे, जिनके लिए हम आपकी मदद करते हैं|</h2></div>
+    
+    <!-- Section begins -->
+    <div class="row">
+      <!-- Box 2: Cherry -->
+      <div class="col-md-6 col-lg-4">
+        <div class="box">
+          <div class="img-box">
+            <img src="/static/assets/offerings/cherry.svg" alt="">
+          </div>
+          <div class="detail-box">
+            <h6>चेरी</h6>
+            <p>
+              ख़स्ता फफूंदी
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Box 7: Peach -->
+      <div class="col-md-6 col-lg-4">
+        <div class="box">
+          <div class="img-box">
+            <img src="/static/assets/offerings/peach.svg" alt="">
+          </div>
+          <div class="detail-box">
+            <h6>आड़ू</h6>
+            <p>बैक्टीरियल स्पॉट</p>
+          </div>
+        </div>
+      </div>
+      <!-- Box 8: Bell Pepper -->
+      <div class="col-md-6 col-lg-4">
+        <div class="box">
+          <div class="img-box">
+            <img src="/static/assets/offerings/bell_pepper.svg" alt="">
+          </div>
+          <div class="detail-box">
+            <h6>शिमला मिर्च</h6>
+            <p>बैक्टीरियल स्पॉट</p>
+          </div>
+        </div>
+      </div>
+      <!-- Box 1: Apple -->
+      <div class="col-md-6 col-lg-4">
+        <div class="box">
+          <div class="img-box">
+            <img src="/static/assets/offerings/apple.svg" alt="">
+          </div>
+          <div class="detail-box">
+            <h6>सेब</h6>
+            <p>
+              पपड़ी
+              <br>ब्लैक रोट
+              <br>देवदार सेब जंग
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Box 5: Cotton -->
+      <div class="col-md-6 col-lg-4">
+        <div class="box">
+          <div class="img-box">
+            <img src="/static/assets/offerings/cotton.png" alt="">
+          </div>
+          <div class="detail-box">
+            <h6>सूती</h6>
+            <p>
+              फ्यूजेरियम विल्ट
+            <br>कर्ल वायरस
+            <br>बैक्टीरियल तुषार
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Box 4: Corn -->
+      <div class="col-md-6 col-lg-4">
+        <div class="box">
+          <div class="img-box">
+            <img src="/static/assets/offerings/corn.svg" alt="">
+          </div>
+          <div class="detail-box">
+            <h6>मक्का</h6>
+            <p>
+              ग्रे लीफ स्पॉट
+              <br>आम जंग
+              <br>ब्लाइट
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Box 12: Wheat -->
+      <div class="col-md-6 col-lg-4">
+        <div class="box">
+          <div class="img-box">
+            <img src="/static/assets/offerings/wheat.svg" alt="">
+          </div>
+          <div class="detail-box">
+            <h6>गेहूँ</h6>
+            <p>
+              क्राउन और रूट रोट
+            <br>पत्ता जंग
+            <br>ढीला स्मट
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Box 6: Grape -->
+      <div class="col-md-6 col-lg-4">
+        <div class="box">
+          <div class="img-box">
+            <img src="/static/assets/offerings/grape.svg" alt="">
+          </div>
+          <div class="detail-box">
+            <h6>अंगूर</h6>
+            <p>
+              ब्लैक रोट
+              <br>एसका
+              <br>पत्ता तुषार
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Box 9: Potato -->
+      <div class="col-md-6 col-lg-4">
+        <div class="box">
+          <div class="img-box">
+            <img src="/static/assets/offerings/potato.svg" alt="">
+          </div>
+          <div class="detail-box">
+            <h6>आलू</h6>
+            <p>
+              जल्दी तुषार
+            <br>लेट तुषार<br><br>
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Box 10: Rice -->
+      <div class="col-md-6 col-lg-4">
+        <div class="box">
+          <div class="img-box">
+            <img src="/static/assets/offerings/rice.svg" alt="">
+          </div>
+          <div class="detail-box">
+            <h6>चावल</h6>
+            <p>
+              जीवाणु तुषार
+            <br>विस्फोट
+            <br>ब्राउन स्पॉट
+            <br>टंग्रो
+            <br><br><br><br><br><br>
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Box 11: Tomato -->
+      <div class="col-md-6 col-lg-4">
+        <div class="box">
+          <div class="img-box">
+            <img src="/static/assets/offerings/tomato.svg" alt="">
+          </div>
+          <div class="detail-box">
+            <h6>टमाटर</h6>
+            <p>
+              बैक्टीरियल स्पॉट
+            <br>अर्ली ब्लाइट
+            <br>देर से तुषार
+            <br>पत्ता मोल्ड
+            <br>सेप्टोरिया लीफ स्पॉट
+            <br>स्पाइडर माइट्स
+            <br>लक्ष्य स्थान
+            <br>मोज़ेक वायरस
+            <br>पीला पत्ता कर्ल वायरस
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Box 3: Coffee -->
+      <div class="col-md-6 col-lg-4">
+        <div class="box">
+          <div class="img-box">
+            <img src="/static/assets/offerings/coffee_beans.svg" alt="">
+          </div>
+          <div class="detail-box">
+            <h6>कॉफ़ी</h6>
+            <p>
+              सर्कोस्पोरा
+              <br>माइनर
+              <br>फोमा
+              <br>जंग
+              <br><br><br><br><br><br>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Redirecting to form.html -->
+    <br>
+    <a href="" onclick="window.open('/form','popup','width=600,height=800');">
+      आप जो खोज रहे थे वह नहीं मिला? <br>नई फसल या बीमारी जोड़ना चाहते हैं?
+    </a>
+
+    <!-- Form Status Alert Box -->
+    {% if Alert == "successful" %}
+      <script>
+        alert("Data was successfully entered.");
+        window.close();
+      </script>
+    {% endif %}
+    {% if Alert == "Crop already entered by user." %}
+      <script>
+        alert("Crop already entered by user.");
+        window.close();
+      </script>
+    {% endif %}
+    {% if Alert == "unsuccessful" %}
+      <script>
+        alert("Data was not successfully entered.");
+        window.close();
+      </script>
+    {% endif %}
+    {% if Alert == "unsuccessful, no POST" %}
+      <script>
+        alert("Form entry not received");
+        window.close();
+      </script>
+    {% endif %}
+
+  </div>
+  <!-- end Plants we offer to help with -->
+
+  <!-- Footer -->
+  <div class="container-fluid footer-main">
+    <div class="row">
+      <div class="col-6">
+        <!-- Creator details -->
+        <h1 class="footer-text">ओमकार देशमुख द्वारा निर्मित|</h1><br>
+        <a href="https://github.com/Deshmukh-Omkar" target="_blank" class="footer-text"><img src="/static/assets//logos/github-brands.svg" class="icons" alt="GitHub"></a>
+        <a href="https://linkedin.com/in/omkar-d-deshmukh" target="_blank"><img src="/static/assets/logos/linkedin.svg" class="icons" alt="LinkedIn"></a>
+      </div>
+      <div class="col-6">
+        <!-- Creator image -->
+        <img src="/static/assets/creator_photo.jpg" class="img-fluid float-end" id="creator_image" alt="Omkar's Photo">
+      </div>
+    </div>
+  </div>
+  <!-- end Footer -->
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,160 @@
+/* ----------------- index.html starts ----------------- */
+/* Page CSS */
+body {
+    font-family: 'Karma', serif;
+}
+
+/* Jumbotron CSS */
+.jt {
+    height: 100vh;
+    position: relative;
+    text-align: center;
+}
+
+.jt-plant {
+    height: 30vh;
+    width: 200px;
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+}
+
+.jt-form {
+    margin:0 auto;
+}
+
+.jt-title {
+    color: #064635;
+    font-family: 'Raleway', sans-serif;
+    font-size: 10vw;
+    padding-top: 25vh;
+}
+
+.jt-img {
+    font-family: 'Zilla Slab', serif;
+    padding: 0.375rem 0.75rem;
+}
+
+.jt-btn {
+    color: white;
+    padding: 0.375rem 0.75rem;
+    background-color: #519259;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+}
+
+.jt-subtitle {
+    margin-top: 2rem;
+}
+
+/* Offerings CSS */
+.offerings {
+    background-color: #519259;
+    padding-bottom: 20px;
+}
+
+.of-h2 {
+    color: #f3f1de;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 3em;
+}
+
+.offerings .box {
+    background-color: #ffffff;
+  padding: 25px 15px;
+  text-align: center;
+  margin-top: 45px;
+}
+
+.offerings .box .img-box img {
+    width: 75px;
+}
+
+.offerings .box .detail-box {
+    margin-top: 25px;
+}
+
+.offerings .box .detail-box h6 {
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #F0BB62;
+}
+
+a:visited {
+    text-decoration: none;
+    color: #F0BB62;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #F0BB62;
+}
+
+/* Footer CSS */
+.footer-main {
+    background-color: #064635;
+}
+
+.icons {
+    height: 2em;
+    width: 3em;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+#creator_image {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    border-radius: 50%;
+}
+
+.footer-text {
+    color: #F4EEA9;
+    padding-top: 1.5em;
+    padding-left: 0.5em;
+}
+
+/* ----------------- index.html ends ----------------- */
+
+/* ----------------- prediction.html starts ----------------- */
+.pt-main {
+    background-color: #519259;
+    color: #fdfdf9;
+}
+
+.pt-data {
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+.pt-data h2 {
+    font-family: 'Zilla Slab', serif;
+    color: #F0BB62;
+}
+
+.crop-photo {
+    margin-top: 147px;
+    height: 224px;
+    width: 224px;
+}
+
+.left-hand {
+    height: 20px;
+    width: 20px
+}
+
+/* ----------------- prediction.html ends ----------------- */
+
+/* ----------------- new_data.html starts ----------------- */
+.data-form {
+    font-family: 'Zilla Slab', serif;
+}
