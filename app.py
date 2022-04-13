@@ -24,7 +24,7 @@ print("Loading crop disease model...")
 loaded_model = pred.get_model()
 
 # Loading model labels
-with open("models/disease_labels.txt", 'r') as f:
+with open("models/disease_names_new.txt", 'r') as f:
     class_names = f.read().split('\n')
 
 # -------------------------------------------------------
@@ -118,7 +118,6 @@ def predict():
 
         # CLI: Printing the disease name and confidence score 
         print("Class: ", class_name)
-        print("Model class index: ", index)
         print("Confidence score: ", confidence_score)
 
         # ---------

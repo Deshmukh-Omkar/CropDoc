@@ -38,20 +38,23 @@ def pred_img(dis_name):
         "टमाटर": "static/assets/offerings/tomato.svg",
         "सेब": "static/assets/offerings/apple.svg",
         "देवदार": "static/assets/offerings/apple.svg",
-        "ऐप्पल": "static/assets/offerings/apple.svg",
         "शिमला": "static/assets/offerings/bell_pepper.svg",
         "चेरी": "static/assets/offerings/cherry.svg",
         "कॉफी": "static/assets/offerings/coffee_beans.svg",
         "मकई": "static/assets/offerings/corn.svg",
         "कपास": "static/assets/offerings/cotton_pred.png",
         "अंगूर": "static/assets/offerings/grapes.svg",
-        "ग्रेप": "static/assets/offerings/grapes.svg",
-        "पीच": "static/assets/offerings/peach.svg",
         "आड़ू": "static/assets/offerings/peach.svg",
         "आलू": "static/assets/offerings/potato.svg",
         "चावल": "static/assets/offerings/rice.svg",
         "राइस": "static/assets/offerings/rice.svg",
         "गेहूं": "static/assets/offerings/wheat.svg",
+        "ब्लूबेरी": "static/assets/offerings/blueberry.svg",
+        "संतरा": "static/assets/offerings/orange.svg",
+        "रास्पबेरी": "static/assets/offerings/raspberry.svg",
+        "सोयाबीन": "static/assets/offerings/soybean.svg",
+        "स्क्वैश": "static/assets/offerings/squash.svg",
+        "स्ट्राबेरी": "static/assets/offerings/strawberry.svg"
     }
 
     crop_name_words = dis_name.split()
