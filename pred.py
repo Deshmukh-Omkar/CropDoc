@@ -10,7 +10,7 @@ def get_model():
     global loaded_model
 
     # Loading the model
-    loaded_model = load_model("models/crop_disease_model.h5")
+    loaded_model = load_model("models/crop-model-vgg16.h5")
 
     # Compiling the saved model
     loaded_model.compile(

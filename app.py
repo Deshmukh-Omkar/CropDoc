@@ -118,6 +118,7 @@ def predict():
 
         # CLI: Printing the disease name and confidence score 
         print("Class: ", class_name)
+        print("Model class index: ", index)
         print("Confidence score: ", confidence_score)
 
         # ---------
