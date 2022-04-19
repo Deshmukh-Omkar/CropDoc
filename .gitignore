@@ -131,3 +131,7 @@ dmypy.json
 # Custom
 clean_dataset.py
 app_v1.py
+sort.py
+
+# Custom folders
+/working_dataset
