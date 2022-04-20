@@ -1,6 +1,3 @@
-# From YouTube video
-# https://www.youtube.com/watch?v=XgzxH6G-ufA
-
 # ML Imports
 import os
 import numpy as np

@@ -48,6 +48,7 @@ def new_data(entry_name, caused_by, about, link, cure):
     # Variable to check if duplicate is present
     counter=0
 
+    # Checking for redundancy
     for entry in dupl_data:
         if entry['Name'] == entry_name:
             print("Crop already entered by user.")

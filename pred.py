@@ -57,6 +57,7 @@ def pred_img(dis_name):
         "स्ट्राबेरी": "static/assets/offerings/strawberry.svg"
     }
 
+    # Isolating the class name and providing the SVG
     crop_name_words = dis_name.split()
     crop_name = crop_name_words[0]
 
