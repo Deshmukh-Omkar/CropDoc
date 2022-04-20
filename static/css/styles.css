@@ -113,7 +113,8 @@ a:hover {
 #creator_image {
     padding-top: 5%;
     padding-bottom: 5%;
-    border-radius: 50%;
+    height: 300px;
+    width: 400px;
 }
 
 .footer-text {

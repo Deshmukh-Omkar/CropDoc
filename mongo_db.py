@@ -59,16 +59,8 @@ def new_data(entry_name, caused_by, about, link, cure):
         # Inserting the dictionary
         collection.insert_one(entry_dict)
 
-        # CLI: Printing the entry
-        check_dict = collection.find().sort({'Name':-1})
-
-        if check_dict['Name'] == entry_name:
-            print(check_dict)
-            print("Entry Successful")
-            alert = "successful"
-        else:
-            print("Entry unsuccessful")
-            alert = "unsuccessful"
+        print("Entry Successful")
+        alert = "successful"
 
     # Closing the MongoDB session after inserting data.
     client.close()
