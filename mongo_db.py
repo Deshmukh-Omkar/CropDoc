@@ -60,7 +60,7 @@ def new_data(entry_name, caused_by, about, link, cure):
         collection.insert_one(entry_dict)
 
         # CLI: Printing the entry
-        check_dict = collection.find().sort({'Name':-1}).limit(1)
+        check_dict = collection.find().sort({'Name':-1})
 
         if check_dict['Name'] == entry_name:
             print(check_dict)
