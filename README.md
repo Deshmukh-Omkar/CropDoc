@@ -64,3 +64,5 @@ However, a challenge prevails at the farmer's end. In developing country, such a
 - Quick response
 ### Development of the Front-end (video)
 ## Implementation (video)
+[![Capture](https://user-images.githubusercontent.com/42082976/164277837-88be32e8-1277-4b2e-ae00-a82cfd57840d.JPG)](https://www.youtube.com/watch?v=NIJWenfImOo)
+
