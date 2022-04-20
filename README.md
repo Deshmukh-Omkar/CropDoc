@@ -63,6 +63,7 @@ However, a challenge prevails at the farmer's end. In developing country, such a
 - Cloud based
 - Quick response
 ### Development of the Front-end (video)
+[![Capture1](https://user-images.githubusercontent.com/42082976/164280334-6dc5eee4-3989-4eb6-8f79-83c57b9750c6.JPG)](https://youtu.be/m4adcrkkdeY)
 ## Implementation (video)
 [![Capture](https://user-images.githubusercontent.com/42082976/164277837-88be32e8-1277-4b2e-ae00-a82cfd57840d.JPG)](https://www.youtube.com/watch?v=NIJWenfImOo)
 
