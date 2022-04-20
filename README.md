@@ -20,13 +20,29 @@ However, a challenge prevails at the farmer's end. In developing country, such a
 - Responsive website for all devices.
 - Supports low-end hardware (smartphones & PC) on the user's device.
 ## Module 0: Deep Learning Model
-### What is CNN?
-### What is Transfer Learning?
+### Why CNN?
+![Simple-VS-DeepLearning](https://user-images.githubusercontent.com/42082976/164188704-10dba20e-b1b0-42e4-bf06-5a3d43e55c4a.jpeg)
+- Simple Neural Nets are good at learning the weights with one hidden layer which is in between the input and output layer. But, it’s not good at complex feature learning.
+- On another hand in  Deep Learning Neural Nets, the series of layers between input and output layer are called hidden layers that can perform identification of features and creating new series of features from data, just as our brain. The more layers we push into the more features it will learn and perform complex operations. The output layer combines all features and makes predictions.
+- Therefore, Simple Neural Nets are used for simple tasks and bulk data isn’t required to train itself. whereas in Deep learning Neural Network can be expensive and require massive data sets to train itself on. 
+- Convolutional Neural Network(CNN or Conv Nets) is well known for its use in applications of image and video recognition. It is more efficient because it reduces the number of parameters which makes different from other deep learning models.
+- **For this model, we used DenseNet201.**
 ### Dataset
+- Derived from Kaggle
+- Contains 229108 images across 55 classes.
+- Sources include
+  - PlantVillage
+  - USDA
+  - Kaggle Competitions
 ### Development of the model (video)
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Kz2f_YFx5js" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ### Performance of the model (screenshots of the accuracy and charts)
+*Due to Dark Mode, the plots might miss certain metrics and title. To view properly, click the plot to open in a new tab.
+![Training and Validation Accuracy](https://user-images.githubusercontent.com/42082976/164190971-f6268e9e-57e4-4d68-9c1a-4917428a1c60.png)
+![Training and Validation Loss](https://user-images.githubusercontent.com/42082976/164190997-ffbac7c1-85fc-4a9f-af44-2a6e59eb593a.png)
 ## Module 1: Application
-### Features
 ### Flask
 ### MongoDB
 ### Development of the Front-end (video)
