@@ -38,6 +38,7 @@ However, a challenge prevails at the farmer's end. In developing country, such a
 [![Screenshot 2022-04-20 at 2 53 13 PM](https://user-images.githubusercontent.com/42082976/164196344-e4f1f115-c428-4600-88b0-a876c984e1a3.png)](https://youtu.be/Kz2f_YFx5js)
 ### Performance of the model (screenshots of the accuracy and charts)
 *Due to Dark Mode, the plots might miss certain metrics and title. To view properly, click the plot to open in a new tab.
+
 ![Training and Validation Accuracy](https://user-images.githubusercontent.com/42082976/164190971-f6268e9e-57e4-4d68-9c1a-4917428a1c60.png)
 ![Training and Validation Loss](https://user-images.githubusercontent.com/42082976/164190997-ffbac7c1-85fc-4a9f-af44-2a6e59eb593a.png)
 ## Module 1: Front-end
