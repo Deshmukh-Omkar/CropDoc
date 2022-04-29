@@ -38,9 +38,10 @@ However, a challenge prevails at the farmer's end. In developing country, such a
 [![Screenshot 2022-04-20 at 2 53 13 PM](https://user-images.githubusercontent.com/42082976/164196344-e4f1f115-c428-4600-88b0-a876c984e1a3.png)](https://youtu.be/Kz2f_YFx5js)
 ### Performance of the model (screenshots of the accuracy and charts)
 *Due to Dark Mode, the plots might miss certain metrics and title. To view properly, click the plot to open in a new tab.
+
 ![Training and Validation Accuracy](https://user-images.githubusercontent.com/42082976/164190971-f6268e9e-57e4-4d68-9c1a-4917428a1c60.png)
 ![Training and Validation Loss](https://user-images.githubusercontent.com/42082976/164190997-ffbac7c1-85fc-4a9f-af44-2a6e59eb593a.png)
-## Module 1: Front-end
+## Module 1: Responsive Web Pages (Front-end)
 - Developed using:
   - HTML
   - CSS
@@ -48,7 +49,7 @@ However, a challenge prevails at the farmer's end. In developing country, such a
 - Hindi text for Indian target end-users.
 - Responsive UI for all devices
 - Optimised for quick loading even in low speed internet connections.
-## Module 2: Backend
+## Module 2 & 3: Flask Backend and MongoDB Cloud Database (Backend)
 ### Flask
 - Connected and routed all the HTML webpages.
 - Uploaded the user input file.
@@ -63,6 +64,7 @@ However, a challenge prevails at the farmer's end. In developing country, such a
 - Cloud based
 - Quick response
 ### Development of the Front-end (video)
+[![Capture1](https://user-images.githubusercontent.com/42082976/164280334-6dc5eee4-3989-4eb6-8f79-83c57b9750c6.JPG)](https://youtu.be/m4adcrkkdeY)
 ## Implementation (video)
 [![Capture](https://user-images.githubusercontent.com/42082976/164277837-88be32e8-1277-4b2e-ae00-a82cfd57840d.JPG)](https://www.youtube.com/watch?v=NIJWenfImOo)
 
