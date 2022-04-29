@@ -41,7 +41,7 @@ However, a challenge prevails at the farmer's end. In developing country, such a
 
 ![Training and Validation Accuracy](https://user-images.githubusercontent.com/42082976/164190971-f6268e9e-57e4-4d68-9c1a-4917428a1c60.png)
 ![Training and Validation Loss](https://user-images.githubusercontent.com/42082976/164190997-ffbac7c1-85fc-4a9f-af44-2a6e59eb593a.png)
-## Module 1: Front-end
+## Module 1: Responsive Web Pages (Front-end)
 - Developed using:
   - HTML
   - CSS
@@ -49,7 +49,7 @@ However, a challenge prevails at the farmer's end. In developing country, such a
 - Hindi text for Indian target end-users.
 - Responsive UI for all devices
 - Optimised for quick loading even in low speed internet connections.
-## Module 2: Backend
+## Module 2 & 3: Flask Backend and MongoDB Cloud Database (Backend)
 ### Flask
 - Connected and routed all the HTML webpages.
 - Uploaded the user input file.
